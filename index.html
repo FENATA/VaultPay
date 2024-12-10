@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fianace</title>
+
+    <!--LINK BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!--LINK STYLES-->
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <section id="main">
+      <!--   <div id="border"></div> -->
+
+      <div id="left">
+        <div id="nav-content">
+          <div id="nav-title">
+            <span id="cld-ic"><i class="bx bxs-wallet-alt"></i></span>
+            <span>Vault<b>Pay</b></span>
+          </div>
+
+          <ul id="nav-ul">
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-line-chart"></i></span>
+                <span class="nav-letter" id="active">Overview</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-menu"></i></span>
+                <span class="nav-letter">Transaction</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-credit-card"></i></span>
+                <span class="nav-letter">Cards</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-file-blank"></i></span>
+                <span class="nav-letter">Invoice</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-medal"></i></span>
+                <span class="nav-letter">Goals</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="nav-icon"><i class="bx bx-cog"></i></span>
+                <span class="nav-letter">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="nav-bottom">
+          <div id="n-b-top">
+            <i class="bx bx-cloud-lightning"></i>
+            <p>
+              Give&nbsp;your&nbsp;money
+              <br />awesame&nbsp;space&nbsp;in&nbsp;cloud
+            </p>
+          </div>
+          <div class="button">
+            <p>
+              Upgrade&nbsp;to&nbsp;premium <i class="bx bx-up-arrow-alt"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--MAIN-->
+      <div id="right">
+        <div id="top">
+          <div id="tp-title">
+            <button class="menu-btn" id="menu-close">
+              <i class="bx bx-log-out-circle"></i>
+            </button>
+            <h1>Overview</h1>
+          </div>
+          <div id="profile">
+            <span><i class="bx bx-mail-send mail"></i></span>
+            <span><i class="bx bxs-bell bell"></i></span>
+            <div id="profile-ac-name">
+              <div class="prof">
+                <p>Fenata Barie</p>
+                <p><span>Admin</span></p>
+              </div>
+              <img src="/assets/profile-pic.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="main-content">
+          <div id="m-c-left">
+            <div id="card">
+              <h2>Cards</h2>
+              <div id="card-related">
+                <div class="card-amount">
+                  <div id="debit-card">
+                    <i class="bx bxs-cloud card-cloud"></i>
+                    <div id="d-c-title">
+                      <i class="bx bxs-credit-card-front"></i>
+
+                      <span>PREMIUM ACCOUNT</span>
+                    </div>
+                    <h1 id="card-num">1234 **** **** 3456</h1>
+                    <div id="name-expire">
+                      <div id="holder">
+                        <p>Card holder</p>
+                        <p>Jayakanna</p>
+                      </div>
+                      <div id="expire">
+                        <p>Expire date</p>
+                        <p>04/24</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="amount">
+                    <div class="amt-lst">
+                      <h1><span class="dollar">$</span>2,850.75</h1>
+                      <p>Current balance</p>
+                    </div>
+                    <div class="amt-lst">
+                      <p><span class="dollar">$</span>1,500.50</p>
+                      <p>Income</p>
+                    </div>
+                    <div class="amt-lst">
+                      <p><span class="dollar">$</span>350.60</p>
+                      <p>Outcome</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-bottom">
+                  <div id="c-b-fst">
+                    <div id="line"></div>
+                    <div id="c-b-wpl">
+                      <p>Weekly payment limit</p>
+                      <p>$350.50 / $4000</p>
+                    </div>
+                  </div>
+                  <div id="c-b-sec">
+                    <div id="on-btn"></div>
+                    <p>Deacivate card</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="transaction-list">
+              <h2>Transaction</h2>
+              <table>
+                <tr>
+                  <td>Reciver</td>
+                  <td>Type</td>
+                  <td>Date</td>
+                  <td>Amount</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>Tesco
+                    Market
+                  </td>
+                  <td>Shopping</td>
+                  <td>04 Jul 2021</td>
+                  <td>$75.67</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fa fa-truck" aria-hidden="true"></i>ElectroMen
+                    Market
+                  </td>
+                  <td>Travel</td>
+                  <td>27 Jul 2021</td>
+                  <td>$250.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <i class="fa fa-leaf" aria-hidden="true"></i>Firogio
+                    Restaurant
+                  </td>
+                  <td>Food</td>
+                  <td>14 Jul 2021</td>
+                  <td>$19.50</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div id="analytics">
+            <div id="goals">
+              <p id="gl-title">
+                Goals<span class="plus"
+                  ><i class="bx bxs-plus-circle"></i
+                ></span>
+              </p>
+              <div id="goal-bx">
+                <div class="gl-card">
+                  <div class="gl-cd-top">
+                    <h1>$450</h1>
+                    <p>05/04/2021</p>
+                  </div>
+                  <div class="gl-cd-bottom">
+                    <i class="bx bx-traffic-cone"></i>
+                    <p>Holidays</p>
+                  </div>
+                </div>
+                <div class="gl-card">
+                  <div class="gl-cd-top">
+                    <h1>$450</h1>
+                    <p>05/04/2021</p>
+                  </div>
+                  <div class="gl-cd-bottom">
+                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                    <p>Renovation</p>
+                  </div>
+                </div>
+                <div class="gl-card">
+                  <div class="gl-cd-top">
+                    <h1>$450</h1>
+                    <p>05/04/2021</p>
+                  </div>
+                  <div class="gl-cd-bottom">
+                    <i class="fa fa-gamepad" aria-hidden="true"></i>
+                    <p>Xbox</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="outcome-statistics">
+              <p id="o-s-title">Outcome Statistics</p>
+              <div id="line-row">
+                <div id="fst-line" class="lines">
+                  <span class="l-r-icon"><i class="bx bx-cart"></i></span>
+                  <div class="l-r-line-row">
+                    <div class="l-r-line"></div>
+                    <p>Shopping</p>
+                  </div>
+                  <p class="num">52%</p>
+                </div>
+                <div id="sec-line" class="lines">
+                  <span class="l-r-icon"><i class="bx bxs-truck"></i></span>
+                  <div class="l-r-line-row">
+                    <div class="l-r-line"></div>
+                    <p>Farm</p>
+                  </div>
+                  <p class="num">21%</p>
+                </div>
+                <div id="three-line" class="lines">
+                  <span class="l-r-icon"><i class="bx bxs-plane-alt"></i></span>
+                  <div class="l-r-line-row">
+                    <div class="l-r-line"></div>
+                    <p>Travel</p>
+                  </div>
+                  <p class="num">74%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
